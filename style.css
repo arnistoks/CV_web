@@ -242,36 +242,91 @@ html, body {
 */
 
 html {
-    
+    background-color: grey;
 }
 
-.container {
+body {
+    padding-top: 220px;
+}
+
+.header {
+    background-color:black;
+    padding: 10px 0;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.nav {
+    display: flex;
+}
+
+.bottons {
+    flex-basis: 20%;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+a:link {
+    color: #ffeb3b;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:visited {
+    color: #ffeb3b;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:hover {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:active {
+    color: red;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+#main-title {
+    color: #ffeb3b;
+    font-size: 30px;
+    text-align: left;
+    width: 50%;
+    padding-left: 20px;
+}
+
+.medium-title {
+    color: #ffeb3b;
+    padding-left: 20px;
+}
+
+.paragraph {
+    color: #ffeb3b;
+    font-size: 20px;
+    text-align: left;
+    width: 50%;
+    padding-left: 20px;
+}
+
+.box {
     background-image: url(background_001.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
 
-#main-title {
-    color: yellow;
-    font-size: 30px;
-    text-align: left;
-    margin-left: -100px;
-}
-
-.paragraph {
-    color: yellow;
-    font-size: 18px;
-    text-align: left;
-    margin-left: -100px;
-}
-
-.box {
-    width: 50%;
+.page {
+    background-color: grey;
 }
 
 @media only screen and (max-width: 600px) {
     .flex-item {
         font-size: 10px;
     }
+}
+
+* {
+    box-sizing: border-box
 }
